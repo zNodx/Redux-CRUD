@@ -6,7 +6,9 @@ export default props => (
     <>
         <Header {...props}/>
         <main className='content container-fluid'>
-            Conteúdo
+            <div className="p-3 mt-3">
+                {props.children}
+            </div>
         </main>
     </>
 )
